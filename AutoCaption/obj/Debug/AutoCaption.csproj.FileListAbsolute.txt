@@ -1,0 +1,10 @@
+C:\Users\Aadhar\Desktop\C#\AutoCaption\AutoCaption\bin\Debug\AutoCaption.exe.config
+C:\Users\Aadhar\Desktop\C#\AutoCaption\AutoCaption\bin\Debug\AutoCaption.exe
+C:\Users\Aadhar\Desktop\C#\AutoCaption\AutoCaption\bin\Debug\AutoCaption.pdb
+C:\Users\Aadhar\Desktop\C#\AutoCaption\AutoCaption\obj\Debug\AutoCaption.csprojAssemblyReference.cache
+C:\Users\Aadhar\Desktop\C#\AutoCaption\AutoCaption\obj\Debug\AutoCaption.Form1.resources
+C:\Users\Aadhar\Desktop\C#\AutoCaption\AutoCaption\obj\Debug\AutoCaption.Properties.Resources.resources
+C:\Users\Aadhar\Desktop\C#\AutoCaption\AutoCaption\obj\Debug\AutoCaption.csproj.GenerateResource.cache
+C:\Users\Aadhar\Desktop\C#\AutoCaption\AutoCaption\obj\Debug\AutoCaption.csproj.CoreCompileInputs.cache
+C:\Users\Aadhar\Desktop\C#\AutoCaption\AutoCaption\obj\Debug\AutoCaption.exe
+C:\Users\Aadhar\Desktop\C#\AutoCaption\AutoCaption\obj\Debug\AutoCaption.pdb
