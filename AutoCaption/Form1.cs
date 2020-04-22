@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 using System.Windows.Forms;
+using System.Diagnostics;
+
 
 namespace AutoCaption
 {
@@ -24,12 +26,45 @@ namespace AutoCaption
             opnfd.Filter = "Image Files (*.jpg;*.jpeg;.*.gif;)|*.jpg;*.jpeg;.*.gif";
             if (opnfd.ShowDialog() == DialogResult.OK)
             {
-                textBox1.Text = opnfd.FileName;
+                imageName.Text = opnfd.FileName;
                 pictureBox1.Image = new Bitmap(opnfd.FileName);
             }
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void run_cmd()
+        {
+
+            string fileName = @"C:\Users\Aadhar\Desktop\test.py";
+
+            Process p = new Process();
+            p.StartInfo = new ProcessStartInfo(@"C:\Python27\python.exe", fileName)
+            {
+                RedirectStandardOutput = true,
+                UseShellExecute = false,
+                CreateNoWindow = true
+            };
+            p.Start();
+
+            string output = p.StandardOutput.ReadToEnd();
+            p.WaitForExit();
+
+            Console.WriteLine(output);
+            result.Text = output;
+            Console.ReadLine();
+
+        }
+        private void button2_Click(object sender, EventArgs e)
+        {
+            string imagePath = imageName.Text;
+            run_cmd();
+            //result.Text = "Ye to bhadwa hai";
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
         {
 
         }

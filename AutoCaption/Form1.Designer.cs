@@ -30,7 +30,9 @@
         {
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.imageName = new System.Windows.Forms.TextBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.result = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -46,31 +48,54 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(334, 360);
+            this.button1.Location = new System.Drawing.Point(42, 413);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(110, 30);
+            this.button1.Size = new System.Drawing.Size(175, 32);
             this.button1.TabIndex = 1;
             this.button1.Text = "Upload";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox1
+            // imageName
             // 
-            this.textBox1.Location = new System.Drawing.Point(42, 364);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(273, 22);
-            this.textBox1.TabIndex = 2;
+            this.imageName.Location = new System.Drawing.Point(42, 378);
+            this.imageName.Name = "imageName";
+            this.imageName.Size = new System.Drawing.Size(402, 22);
+            this.imageName.TabIndex = 2;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(277, 413);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(167, 32);
+            this.button2.TabIndex = 3;
+            this.button2.Text = "Generate Caption";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // result
+            // 
+            this.result.AutoSize = true;
+            this.result.Location = new System.Drawing.Point(180, 349);
+            this.result.Name = "result";
+            this.result.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.result.Size = new System.Drawing.Size(0, 17);
+            this.result.TabIndex = 4;
+            this.result.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(491, 419);
-            this.Controls.Add(this.textBox1);
+            this.ClientSize = new System.Drawing.Size(484, 464);
+            this.Controls.Add(this.result);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.imageName);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -81,7 +106,9 @@
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox imageName;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label result;
     }
 }
 
