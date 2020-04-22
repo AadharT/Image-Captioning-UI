@@ -35,10 +35,10 @@ namespace AutoCaption
         {
 
         }
-        private void run_cmd()
+        private void get_caption()
         {
-
-            string fileName = @"C:\Users\Aadhar\Desktop\test.py";
+            // Put your python script path here, don't remove the @
+            string fileName = @"test.py";
 
             Process p = new Process();
             p.StartInfo = new ProcessStartInfo(@"C:\Python27\python.exe", fileName)
@@ -60,8 +60,7 @@ namespace AutoCaption
         private void button2_Click(object sender, EventArgs e)
         {
             string imagePath = imageName.Text;
-            run_cmd();
-            //result.Text = "Ye to bhadwa hai";
+            get_caption();
         }
 
         private void Form1_Load(object sender, EventArgs e)
