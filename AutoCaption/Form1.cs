@@ -35,13 +35,14 @@ namespace AutoCaption
         {
 
         }
-        private void get_caption()
+        private void get_caption(string ImagePath)
         {
             // Put your python script path here, don't remove the @
-            string fileName = @"test.py";
-
+            string fileName = @"final.py";
+            fileName += ' ';
+            fileName += ImagePath;
             Process p = new Process();
-            p.StartInfo = new ProcessStartInfo(@"C:\Python27\python.exe", fileName)
+            p.StartInfo = new ProcessStartInfo(@"python", fileName)
             {
                 RedirectStandardOutput = true,
                 UseShellExecute = false,
@@ -55,12 +56,11 @@ namespace AutoCaption
             Console.WriteLine(output);
             result.Text = output;
             Console.ReadLine();
-
         }
         private void button2_Click(object sender, EventArgs e)
         {
             string imagePath = imageName.Text;
-            get_caption();
+            get_caption(imagePath);
         }
 
         private void Form1_Load(object sender, EventArgs e)
