@@ -1,5 +1,5 @@
 # AutoCaption
-![AC Logo](https://drive.google.com/open?id=1qDqgMt23of8IOUK-V0uS-G5BOrRHLM8c)
+![AC Logo](ac.logo.png)
 
 
 Contains control and vision package for the year 2019, built on ROS kinetic and openCV.
