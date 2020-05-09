@@ -2,7 +2,7 @@
 ![AC Logo](aclogo.png)
 
 
-Contains control and vision package for the year 2019, built on ROS kinetic and openCV.
+Give us an image and we will give you a "catchy" caption for it.Build on .Net and model trained on keras. Easy to use and fun.
 ## ![Build Status](https://travis-ci.org/dwyl/esta.svg?branch=master)
 
 # Clone this repository 
