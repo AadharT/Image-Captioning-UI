@@ -1,6 +1,5 @@
-# AutoCaption
 ![AC Logo](aclogo.png)
-
+# AutoCaption
 
 Give us an image and we will give you a "catchy" caption for it.Build on .Net and model trained on keras. Easy to use and fun.
 ## ![Build Status](https://travis-ci.org/dwyl/esta.svg?branch=master)
