@@ -8,7 +8,7 @@ Contains control and vision package for the year 2019, built on ROS kinetic and 
 # Clone this repository 
 
 ```
-git clone https://github.com/dtu-auv/Stack2018
+git clone https://github.com/AadharT/Image-Captioning-UI
 ```
 # Dependencies
 
