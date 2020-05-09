@@ -27,3 +27,6 @@ model_19.h5 - Coming soon
 ```
 Run the exe file.
 Make sure python is added to your path environment variables.
+
+![Sample](sample.png)
+
